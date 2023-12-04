@@ -5,6 +5,10 @@ import Predict from './pages/Predict';
 import Explore from './pages/Explore';
 import About from './pages/About';
 import Team from './pages/Team';
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import APIPAGE from "./pages/APIPage";
+
 
 const App = () => {
   const router = createBrowserRouter([
@@ -27,7 +31,19 @@ const App = () => {
     {
       path: '/team',
       element: <Team/>,
-    }
+    },
+    {
+      path: "/login",
+      element: <Login />,
+    },
+    {
+      path: "/register",
+      element: <Register />,
+    },
+    {
+      path: "/apipage",
+      element: <APIPAGE/>,
+    },
 
   ])
   return (
